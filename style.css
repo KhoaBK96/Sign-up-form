@@ -1,0 +1,155 @@
+/*
+  Josh's Custom CSS Reset
+  https://www.joshwcomeau.com/css/custom-css-reset/
+*/
+*, *::before, *::after {
+    box-sizing: border-box;
+  }
+  * {
+    margin: 0;
+  }
+  body {
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+  }
+  img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+  }
+  input, button, textarea, select {
+    font: inherit;
+  }
+  p, h1, h2, h3, h4, h5, h6 {
+    overflow-wrap: break-word;
+  }
+  #root, #__next {
+    isolation: isolate;
+  }
+  
+@font-face {
+    font-family: "odinLogo";
+    src: url(./assests/Norse-Bold.otf) format('opentype');
+}
+
+body{
+    display: flex;
+    height: 100vh;
+    font-family: sans-serif;
+}
+
+.left-container{
+    height: 100%;
+    width: 40%;
+    position: relative;
+}
+
+.left-container > img {
+    height: 100%;
+    width: 100%;
+}
+
+.logo-container{
+    background-color: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    height: 15%;
+    top:20%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem 3.5rem;
+}
+
+.logo-container > img{
+    height: 100%;   
+    object-fit: contain;
+}
+
+.logo-container > h1 {
+    font-family: odinLogo;
+    font-size: 5rem;
+    color: #fff;
+}
+
+.right-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.first-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+    padding-left: 2rem;
+    padding-bottom: 2rem;
+    padding-right: 15rem;
+    background-color: #f3eded;
+    height: 100%;
+    width: 100%;
+}
+.second-container{
+    display: flex;
+    box-shadow: 0 4px 2px -2px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    flex-direction: column;
+    justify-content: stretch;
+    align-items: start;
+    height: 100%;
+}
+
+form{
+    display: flex;
+    flex-wrap: wrap ;
+    padding: 2rem 30rem 2rem 2rem ;
+    gap:10px;
+    height: 100%;
+}
+
+form > div{
+    display: flex;
+    flex-direction: column;
+    flex-grow:1;
+    justify-content: center;
+    align-items: flex-start;
+    margin-right:10rem;
+}
+
+form > div>input{
+    border-radius: 5px;
+}
+
+form > div> label {
+    font-size: 0.7rem ;
+}
+.thirst-container{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    height: 100%;
+    width: 100%;
+    padding-left: 2rem;
+    padding-top: 30px;
+}
+
+.second-container> h3{
+    width: 100%;
+    padding-top: 1rem;
+    padding-left: 2rem;
+}
+
+.thirst-container>button{
+    padding: 5px 60px;
+    margin-bottom: 30px;
+    background-color: #2e6315;
+    border-radius: 5px;
+    color: #fff;
+}
+
+.thirst-container>p>span{
+    color: #2e6315;
+}
