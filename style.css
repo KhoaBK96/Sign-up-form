@@ -31,125 +31,120 @@
     src: url(./assests/Norse-Bold.otf) format('opentype');
 }
 
-body{
-    display: flex;
+.content{
     height: 100vh;
-    font-family: sans-serif;
+    width: 100vw;
 }
 
-.left-container{
-    height: 100%;
-    width: 40%;
+.content,
+.logo{
+    display: flex;
+    flex-flow: row wrap;
+}
+
+
+/* left-side */
+
+.logo{
+    height: auto;
+    background-color: rgba(0, 0, 0, 0.7);
     position: relative;
-}
-
-.left-container > img {
-    height: 100%;
-    width: 100%;
-}
-
-.logo-container{
-    background-color: rgba(0, 0, 0, 0.5);
-    position: absolute;
-    height: 15%;
-    top:20%;
-    width: 100%;
-    display: flex;
+    top: 20vh;
+    gap: 1vw;
+    padding: 15px 0;
     justify-content: center;
     align-items: center;
-    padding: 1rem 3.5rem;
 }
 
-.logo-container > img{
-    height: 100%;   
-    object-fit: contain;
+.odin-logo{
+    width: 10vh;
 }
 
-.logo-container > h1 {
+.picture{
+    background-image: url(./assests/sign-up-bg.jpg);
+    width: 40vw;
+    background-position: center;
+    background-size: auto;
+    background-repeat: no-repeat;
+}
+
+h1{
+    color: white;
     font-family: odinLogo;
-    font-size: 5rem;
-    color: #fff;
+    font-size: 10vh;
 }
 
-.right-container{
+/* right-side */
+.right{
+    width: 60vw;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+}
+
+.left{
+    padding-left: 3vw;
+}
+
+.dummy-text{
+    font-weight: 500;
+    width: 90%;
+    font-size: 1.2rem;
+}
+
+.remote-text{
+    margin: 40px 0 80px;
+}
+
+/* form */
+.form{
+    box-shadow: 0 10px 20px -2px rgb(22, 22, 22);
+    display: flex;
+    flex-flow: row wrap;
+    gap: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.input{
+    display: flex;
+    flex-flow: column wrap;
+    width: 40%;
+    font-size: 0.7rem;
+    text-transform: uppercase;
+    opacity: 50%;
+}
+
+button{
+    background-color: rgba(0, 0, 0, 0);
+    color: rgb(155, 34, 34);
+    font-weight: 700;
+    font-size: 1.2em;
+    border: 2px solid rgb(155, 34, 34);
+    border-radius: 5px;
+    padding: 10px 40px;
+    margin: 40px 0;
+}
+
+.log-in{
+    display: flex;
+    gap: 5px;
+}
+
+a{
+    text-decoration: none;
+    color: rgb(155, 34, 34);
+    font-weight: 700;
+}
+
+.form-title{
+    width: 100%;
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+button:hover{
+    background-color:  rgb(155, 34, 34);
+    color: black;
     
-}
-
-.first-container{
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    align-items: flex-start;
-    padding-left: 2rem;
-    padding-bottom: 2rem;
-    padding-right: 15rem;
-    background-color: #f3eded;
-    height: 100%;
-    width: 100%;
-}
-.second-container{
-    display: flex;
-    box-shadow: 0 4px 2px -2px rgba(0, 0, 0, 0.2);
-    width: 100%;
-    flex-direction: column;
-    justify-content: stretch;
-    align-items: start;
-    height: 100%;
-}
-
-form{
-    display: flex;
-    flex-wrap: wrap ;
-    padding: 2rem 30rem 2rem 2rem ;
-    gap:10px;
-    height: 100%;
-}
-
-form > div{
-    display: flex;
-    flex-direction: column;
-    flex-grow:1;
-    justify-content: center;
-    align-items: flex-start;
-    margin-right:10rem;
-}
-
-form > div>input{
-    border-radius: 5px;
-}
-
-form > div> label {
-    font-size: 0.7rem ;
-}
-.thirst-container{
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: flex-start;
-    height: 100%;
-    width: 100%;
-    padding-left: 2rem;
-    padding-top: 30px;
-}
-
-.second-container> h3{
-    width: 100%;
-    padding-top: 1rem;
-    padding-left: 2rem;
-}
-
-.thirst-container>button{
-    padding: 5px 60px;
-    margin-bottom: 30px;
-    background-color: #2e6315;
-    border-radius: 5px;
-    color: #fff;
-}
-
-.thirst-container>p>span{
-    color: #2e6315;
 }

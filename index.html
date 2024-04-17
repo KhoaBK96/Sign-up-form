@@ -7,50 +7,50 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="left-container">
-        <img src="./assests/sign-up-bg.jpg" alt="left-side-bg">
-        <div class="logo-container">
-            <img src="./assests/odin-lined.png" alt="logo">
-            <h1>ODIN</h1>
+    <div class="content">
+        <div class="picture">
+            <div class="logo">
+                <img src="./assests/odin-lined.png" alt="logo" class="odin-logo">
+                <h1 class="odin">ODIN</h1>
+            </div>
         </div>
-    </div>
-    <div class="right-container">
-        <div class="first-container">
-            <h3>This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams. <br> Sign up <span>now</span> to get start</h3><br>
-            <h3>You <span>know</span> you want to</h3>
-        </div>
-        <div class="second-container">
-            <h3>Let's do this!</h3>
-            <form action="" method="POST">
-                <div>
-                    <label for="first_name">FIRST NAME</label>
-                    <input type="text" id="first_name" name="first_name">
+        <div class="right">
+            <div class="dummy-text left">
+                <p>This is not a real online service! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Necessitatibus, commodi!</p>
+                <p>Sign up <em>now</em> to get started.</p>
+                <p class="remote-text">You <em>know</em> you want to.</p>
+            </div>
+            <form action="#" >
+                <div class="form left">
+                        <p class="form-title">Let's do this!</p>
+                        <div class="input">
+                            <label for="first_name">FIRST NAME</label>
+                            <input type="text" id="first_name" name="first_name" required>
+                        </div>
+                        <div class="input">
+                            <label for="last_name">LAST NAME</label>
+                            <input type="text" id="last_name" name="last_name" required>
+                        </div>
+                        <div class="input">
+                            <label for="email">EMAIL</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="input">
+                            <label for="phone_number">PHONE NUMBER</label>
+                            <input type="text" id="phone_number" name="phone_number" required>
+                        </div>
+                        <div class="input">
+                            <label for="password">PASSWORD</label>
+                            <input type="text" id="password" name="password" minlength="8" required>
+                        </div>
+                        <div class="input">
+                            <label for="confirm_password">CONFIRM PASSWORD</label>
+                            <input type="text" id="confirm_password" name="confirm_password" minlength="8" required>
+                        </div>
                 </div>
-                <div>
-                    <label for="last_name">LAST NAME</label>
-                    <input type="text" id="last_name" name="last_name">
-                </div>
-                <div>
-                    <label for="email">EMAIL</label>
-                    <input type="email" id="email" name="email">
-                </div>
-                <div>
-                    <label for="phone_number">PHONE NUMBER</label>
-                    <input type="number" id="phone_number" name="phone_number">
-                </div>
-                <div>
-                    <label for="password">PASSWORD</label>
-                    <input type="text" id="password" name="password">
-                </div>
-                <div>
-                    <label for="confirm_password">CONFIRM PASSWORD</label>
-                    <input type="text" id="confirm_password" name="confirm_password">
-                </div>
+                <div class="left button"><button type="submit">Create Account</button></div>
             </form>
-        </div>
-        <div class="thirst-container">
-            <button>Create Account</button>
-            <p>Already have and account? <span>Log in</span></p>
+            <div class="log-in left"><p>Already have an account?</p><a href="#">Log in</a></div>
         </div>
     </div>
 </body>
